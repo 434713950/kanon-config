@@ -7,8 +7,11 @@ server:
 
 spring:
   redis:
-    host: 127.0.0.1
+    host: 47.98.252.163
     port: 6379
+    timeout: 5000
+    password: GMadmins1318#
+    database: 14
   rabbitmq:
     host: 127.0.0.1
     port: 5672
