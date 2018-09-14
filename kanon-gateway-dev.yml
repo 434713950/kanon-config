@@ -2,6 +2,10 @@ server:
   port: 60000
 
 spring:
+  #zipkin服务链路监控
+  zipkin:
+    rabbitmq:
+      queue: zipkin
   sleuth:
     sampler:
       percentage: 0.2
