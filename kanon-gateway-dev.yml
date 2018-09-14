@@ -2,25 +2,19 @@ server:
   port: 60000
 
 spring:
-  zipkin:
-    rabbitmq:
-      queue: zipkin
   sleuth:
     sampler:
       percentage: 0.2
 
 zuul:
-  ribbon:
-    eager-load:
-      enabled: true
-      clients: pig-auth,pig-upms-service,pig-demo-service
   ignoredServices: '*'
   host:
     connect-timeout-millis: 10000
     socket-timeout-millis: 10000
   ratelimit:
-    key-prefix: pig-ratelimite
+    key-prefix: kanon-ratelimite
     enabled: true
+    #使用redis存储,必须大写
     repository: REDIS
     behind-proxy: true
     policies:
@@ -31,17 +25,19 @@ zuul:
 
 security:
   validate:
-    code: true
+    #开启验证码验证过滤器
+    code: false
+    #演示环境过滤器
     preview: false
   sessions: stateless
   oauth2:
     client:
-      client-id: pig
-      client-secret: pig
+      client-id: kanon
+      client-secret: kanon
     resource:
       loadBalanced: true
       token-info-uri: ${security.auth.server}/oauth/check-token
-      service-id: pig-gateway
+      service-id: kanon-gateway
       jwt:
          key-uri: ${security.auth.server}/oauth/token_key #解析jwt令牌所需要密钥的地址
 auth:
