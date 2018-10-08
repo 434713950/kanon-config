@@ -49,4 +49,3 @@ server:
   upms:
     #通用登录服务的服务名
     name: kanon-upms-server
-
