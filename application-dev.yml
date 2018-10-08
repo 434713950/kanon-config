@@ -4,6 +4,12 @@ server:
     max-threads: 500
     #最小备用线程数
     min-spare-threads: 50
+  auth:
+    #认证服务的服务名
+    name: kanon-auth
+  upms:
+    #通用登录服务的服务名
+    name: kanon-upms-server
 
 spring:
   redis:
@@ -41,11 +47,3 @@ endpoints:
     enabled: true
   shutdown:
     enabled: false
-
-server:
-  auth:
-    #认证服务的服务名
-    name: kanon-auth
-  upms:
-    #通用登录服务的服务名
-    name: kanon-upms-server
