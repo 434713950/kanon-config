@@ -28,6 +28,8 @@ zuul:
         refresh-interval: 3
 
 security:
+  auth:
+    http://localhost:3000
   validate:
     #开启验证码验证过滤器
     code: false
