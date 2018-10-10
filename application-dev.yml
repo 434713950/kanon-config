@@ -25,6 +25,8 @@ spring:
     multipart:
       max-file-size: 1000MB
       max-request-size: 1000MB
+  session:
+    store-type: none
 
 ribbon:
   eager-load:
