@@ -37,5 +37,8 @@ ignore:
     - /metrics/**
     - /loggers/**
     - /mobile/token
+    - /oauth/**
+
+
 
 
