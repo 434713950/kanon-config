@@ -23,13 +23,13 @@ turbine:
 notifier:
   #是否开启短信通知
   mobile:
-    enabled: false
+    enabled: true
     #使用的短信签名
-    sign: 尚HAI购
+    sign: 崔超楠
     #使用的短信模板
-    template_code: SMS_150170684
+    template_code: SMS_119915206
     mobiles:
-      - xxxxxxx
+      - 13770391128
   #是否启用钉钉通知
   dingTalk:
-    enabled: true
+    enabled: false
