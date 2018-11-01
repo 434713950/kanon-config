@@ -4,11 +4,20 @@ server:
     max-threads: 500
     #最小备用线程数
     min-spare-threads: 50
+  auth:
+    #认证服务的服务名
+    name: kanon-auth
+  upms:
+    #通用登录服务的服务名
+    name: kanon-upms-server
 
 spring:
   redis:
-    host: 127.0.0.1
+    host: 47.98.252.163
     port: 6379
+    timeout: 5000
+    password: GMadmins1318#
+    database: 14
   rabbitmq:
     host: 127.0.0.1
     port: 5672
@@ -16,6 +25,8 @@ spring:
     multipart:
       max-file-size: 1000MB
       max-request-size: 1000MB
+  session:
+    store-type: none
 
 ribbon:
   eager-load:
@@ -38,4 +49,3 @@ endpoints:
     enabled: true
   shutdown:
     enabled: false
-

@@ -3,6 +3,8 @@ server:
 
 # datasoure默认使用JDBC
 spring:
+  session:
+    store-type: none
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
@@ -35,5 +37,8 @@ ignore:
     - /metrics/**
     - /loggers/**
     - /mobile/token
+    - /oauth/**
+
+
 
 

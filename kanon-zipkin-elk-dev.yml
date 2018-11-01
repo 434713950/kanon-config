@@ -1,0 +1,18 @@
+server:
+  port: 5002
+
+zipkin:
+  collector:
+    rabbitmq:
+      addresses: 127.0.0.1:5672
+      queue: zipkin
+  #该处指定将数据持久化到es中（默认是内存）
+  storage:
+    type: elasticsearch
+    elasticsearch:
+      hosts: 192.168.137.131:9200
+      cluster: elasticsearch
+      index: zipkin
+      max-requests: 64
+      index-shards: 5
+      index-replicas: 1
