@@ -28,8 +28,14 @@ notifier:
     sign: 崔超楠
     #使用的短信模板
     template_code: SMS_119915206
+    #需要短信通知的手机号
     mobiles:
       - 13770391128
   #是否启用钉钉通知
-  dingTalk:
+  dingtalk:
     enabled: false
+    #使用通知的微应用id
+    agent_id: 177953690
+    #需要通知的用户
+    user_ids:
+      - 1806022921788542
