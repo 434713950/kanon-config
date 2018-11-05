@@ -1,2 +1,14 @@
 server:
   port: 4050
+
+#阿里云的配置信息,用于阿里短信服务
+aliyun:
+  access_key_id: XXXXXXX
+  access_key_secret: XXXXXXX
+
+#钉钉配置信息,用于钉钉消息通知使用
+dingtalk:
+  #钉钉企业id
+  crop_id: XXXXXXX
+  #钉钉企业密码
+  crop_secret: XXXXXXX
