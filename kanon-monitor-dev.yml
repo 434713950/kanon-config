@@ -25,12 +25,12 @@ notifier:
   mobile:
     enabled: false
     #使用的短信签名
-    sign: 崔超楠
+    sign: xxxxxx
     #使用的短信模板
-    template_code: SMS_119915206
+    template_code: xxxxxx
     #需要短信通知的手机号
     mobiles:
-      - 13770391128
+      - xxxxxx
   #是否启用钉钉通知
   dingtalk:
     enabled: true
