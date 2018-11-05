@@ -23,7 +23,7 @@ turbine:
 notifier:
   #是否开启短信通知
   mobile:
-    enabled: true
+    enabled: false
     #使用的短信签名
     sign: 崔超楠
     #使用的短信模板
@@ -33,7 +33,7 @@ notifier:
       - 13770391128
   #是否启用钉钉通知
   dingtalk:
-    enabled: false
+    enabled: true
     #使用通知的微应用id
     agent_id: 177953690
     #需要通知的用户
