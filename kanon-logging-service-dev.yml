@@ -54,12 +54,12 @@ mybatis-plus:
     #数据库大写下划线转换
     #capital-mode: true
     #序列接口实现类配置,不在推荐使用此方式进行配置,请使用自定义bean注入
-    #key-generator: com.baomidou.mybatisplus.incrementer.H2KeyGenerator
+    key-generator: com.baomidou.mybatisplus.incrementer.H2KeyGenerator
     #逻辑删除配置（下面3个配置）
     #logic-delete-value: 0
     #logic-not-delete-value: 1
     #自定义sql注入器,不在推荐使用此方式进行配置,请使用自定义bean注入
-    #sql-injector: com.baomidou.mybatisplus.mapper.LogicSqlInjector
+    sql-injector: com.baomidou.mybatisplus.mapper.LogicSqlInjector
     #自定义填充策略接口实现
     meta-object-handler: com.github.kanon.datasource.mybatis.handler.MyBatisPlusMetaObjectHandler
     # SQL 解析缓存，开启后多租户 @SqlParser 注解生效
