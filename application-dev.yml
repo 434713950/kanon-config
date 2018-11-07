@@ -13,11 +13,11 @@ server:
 
 spring:
   redis:
-    host: 127.0.0.1
+    host: 10.2.21.228
     port: 6379
     timeout: 5000
   rabbitmq:
-    host: 127.0.0.1
+    host: 10.2.21.228
     port: 5672
   http:
     multipart:
