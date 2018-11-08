@@ -28,7 +28,7 @@ sharding:
         jdbc-url: jdbc:mysql://127.0.0.1:3306/kanon?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
     config:
       sharding:
-        defaultDataSourceName: ds
+#        defaultDataSourceName: ds
          #分库规则
 #        default-database-strategy:
 #          inline:
