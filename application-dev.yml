@@ -17,7 +17,7 @@ spring:
     port: 6379
     timeout: 5000
     password: GMadmins1318#
-    database: 10
+    database: 15
   rabbitmq:
     host: 10.2.21.228
     port: 5672
