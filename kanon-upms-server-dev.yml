@@ -16,6 +16,18 @@ spring:
     username: root
     password: root
 
+security:
+  oauth2:
+    client:
+      client-id: kanon
+      client-secret: kanon
+    resource:
+      loadBalanced: true
+      token-info-uri: ${security.auth.server}/oauth/check-token
+      service-id: kanon-upms-server
+      jwt:
+        key-uri: ${security.auth.server}/oauth/token_key #解析jwt令牌所需要密钥的地址
+
 #mybatis
 mybatis-plus:
   #实体扫描，多个package用逗号或者分号分隔
