@@ -29,7 +29,7 @@ zuul:
 
 security:
   auth:
-    server: http://10.2.21.59:3000
+    server: http://127.0.0.1:3000
   validate:
     #开启验证码验证过滤器
     code: false
