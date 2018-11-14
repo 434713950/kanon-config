@@ -17,14 +17,14 @@ turbine:
 notifier:
   #是否开启短信通知
   mobile:
-    enabled: true
+    enabled: false
     #使用的短信签名
-    sign: 尚HAI购
+    sign: XXXX
     #使用的短信模板
-    template_code: SMS_150170684
+    template_code: XXXXX
     #需要短信通知的手机号
     mobiles:
-      - 13770391128
+      - XXXXXXXXXX
   #是否启用钉钉通知
   dingtalk:
     enabled: false
