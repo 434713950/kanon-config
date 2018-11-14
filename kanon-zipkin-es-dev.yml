@@ -12,7 +12,7 @@ zipkin:
   storage:
     type: elasticsearch
     elasticsearch:
-      hosts: 192.168.137.131:9200
+      hosts: localhost:9200
       cluster: elasticsearch
       index: zipkin
       max-requests: 64
