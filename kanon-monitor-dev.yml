@@ -24,7 +24,7 @@ notifier:
     template_code: SMS_150170684
     #需要短信通知的手机号
     mobiles:
-      - xxxxxx
+      - 13770391128
   #是否启用钉钉通知
   dingtalk:
     enabled: false
