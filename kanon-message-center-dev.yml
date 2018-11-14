@@ -3,8 +3,8 @@ server:
 
 #阿里云的配置信息,用于阿里短信服务
 aliyun:
-  access_key_id: XXXXXXX
-  access_key_secret: XXXXXXX
+  access_key_id: LTAIolOkl6xsNTXv
+  access_key_secret: drZWEjcV1gqeM2vlLMOPzRLyzesUyU
 
 #钉钉配置信息,用于钉钉消息通知使用
 dingtalk:
