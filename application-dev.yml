@@ -19,7 +19,7 @@ spring:
     password: GMadmins1318#
     database: 15
   rabbitmq:
-    host: 10.2.21.228
+    host: 127.0.0.1
     port: 5672
     username: other
     password: admin
