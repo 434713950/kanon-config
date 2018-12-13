@@ -13,11 +13,9 @@ server:
 
 spring:
   redis:
-    host: 47.98.252.163
+    host: 127.0.0.1
     port: 6379
     timeout: 5000
-    password: GMadmins1318#
-    database: 15
   rabbitmq:
     host: 127.0.0.1
     port: 5672
