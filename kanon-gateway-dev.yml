@@ -33,8 +33,6 @@ security:
   validate:
     #开启验证码验证过滤器
     code: false
-    #演示环境过滤器
-    preview: false
   sessions: stateless
   oauth2:
     client:
