@@ -3,11 +3,13 @@ server:
 
 #阿里云的配置信息,用于阿里短信服务
 aliyun:
+  enabled: false
   access_key_id: XXXXXXXXXXXXXXXXXXXX
   access_key_secret: XXXXXXXXXXXXXXXXXXXX
 
 #钉钉配置信息,用于钉钉消息通知使用
 dingtalk:
+  enabled: false
   #钉钉企业id
   crop_id: XXXXXXX
   #钉钉企业密码
